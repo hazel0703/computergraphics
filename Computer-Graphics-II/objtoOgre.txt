@@ -1,0 +1,18 @@
+How to convert the models into OGRE.
+
+1. Do the ligh baking (Quemado de Luces).
+
+2. The file that has been used for doing the lightning must be saved with another name (e.g. XXXXXXXX_OgreExport.mb).
+
+3. Assign a LAMBERT to each object.
+
+4. In colour add BLACK, diffuse parameter 1.0. An the texture of the ligh baking add as channel "Incandescense".
+
+
+Remember to add at the texture node the Filter Type in OFF.
+
+This must be done with each object that has been used for the light baking.
+
+Then export it with the plugin OgreMax.
+
+5. Then at the . material, the filtering will be none, then the seams of UV will not be seen.
